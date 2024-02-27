@@ -1,20 +1,15 @@
-
 public class Main {
-    public  static void main(String[] args) throws Exception{
-       Operacion operacion = new Operacion();
 
-       operacion.crearOperacion();
-       
-       System.out.println(operacion.sumar());
-       System.out.println(" ");
-        
-       System.out.println(operacion.restar());
-       System.out.println(" ");
+    public static void main(String[] args) {
 
-       System.out.println(operacion.multiplicar());
-       System.out.println(" ");
-      
-       System.out.println(operacion.dividir());
-       System.out.println(" ");
+        CuentaBancaria cuentaBancaria = new CuentaBancaria();
+
+        cuentaBancaria.crearCuenta();
+
+        cuentaBancaria.ingresar(500);
+
+        cuentaBancaria.retirar(500);
+
+        cuentaBancaria.extraccionRapida();
     }
 }
